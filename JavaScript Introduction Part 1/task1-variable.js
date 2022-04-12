@@ -1,7 +1,7 @@
 const biodata = {
 	name: "Hasbi Alwi Kusmana",
 	age: 23,
-    hobbies: ['coding', 'reading', 'listening to music'],
+    myHobby: ['coding', 'reading', 'listening to music'],
     isMarried: false,
     schoolList: [
         {
