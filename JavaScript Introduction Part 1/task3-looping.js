@@ -11,4 +11,4 @@ const printSegitiga = (num) => {
         }
     }
     }
-printSegitiga(5);
+printSegitiga(6);
