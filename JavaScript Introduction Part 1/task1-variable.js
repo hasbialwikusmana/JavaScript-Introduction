@@ -1,7 +1,7 @@
 const biodata = {
 	name: "Hasbi Alwi Kusmana",
 	age: 23,
-    myHobby: ['coding', 'reading', 'listening to music'],
+    hobbies: ["coding", "playing games", "music"],
     isMarried: false,
     schoolList: [
         {
@@ -31,7 +31,7 @@ const biodata = {
         skillName: 'Javascript',
         level: 'beginner'
     }],
-    interest_in_coding: true
+    interestInCoding: true
 }
 
 console.log(biodata);
