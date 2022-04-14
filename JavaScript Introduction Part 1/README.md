@@ -1,19 +1,19 @@
 1.  Buat variabel dengan nama biodata dan tipe data object dengan value dan tipe data sebagai berikut:
 
-    - name (string)
-    - age(number)
-    - hobbies (array) minimal 3 elements
-    - IsMaried (boolean)
-    - schoolList (Array of Object) with key name, yearIn, yearOut, and major (if any, if no set “null” ) minimal 3 elements
-    - skills (Array of Object) with key skillName and level (beginner, advanced, expert) minimal 2 elements
-    - interestInCoding (Boolean)
+- name (string)
+- age(number)
+- hobbies (array) minimal 3 elements
+- IsMaried (boolean)
+- schoolList (Array of Object) with key name, yearIn, yearOut, and major (if any, if no set “null” ) minimal 3 elements
+- skills (Array of Object) with key skillName and level (beginner, advanced, expert) minimal 2 elements
+- interestInCoding (Boolean)
 
-    Contoh:
-    const biodata = {
-    name: “arkademy”,
-    age: …
-    .... : ...  
-    }
+Contoh:
+const biodata = {
+name: “arkademy”,
+age: …
+.... : ...  
+}
 
 2.  Buat program yang menghitung rata-rata UN beserta gradenya, dengan mengisi 4 nilai yakni Bahasa indonesia, Bahasa Inggris Matematika dan IPA, yang di dalam program tersebut memiliki validasi yaitu semua nilai tersebut harus diisi, dan juga untuk grade memiliki kondisi dengan ketentuan sebagai berikut:
     90 - 100 = A
@@ -22,17 +22,17 @@
     60 - 69 = D
     0 - 59 = E
 
-    Contoh:
-    const mtk = 80
-    const bahasaIndonesia = 90
-    const bahasaInggris = 89
-    const ipa = 69
-    …………….
-    …………....
+Contoh:
+const mtk = 80
+const bahasaIndonesia = 90
+const bahasaInggris = 89
+const ipa = 69
+…………….
+…………....
 
-    Output:
-    Rata-rata = 82
-    Grade = B
+Output:
+Rata-rata = 82
+Grade = B
 
 3.  Buatlah program yang memiliki satu variabel dengan nama “printSegitiga” yg berisi tipe data number yang menghasilkan output segitiga terbalik yang berisi angka
 
@@ -52,7 +52,7 @@ const printSegitiga = “enam”
 Output:
 “Data harus number”
 
-4. Dari data dibawah ini
+4.  Dari data dibawah ini
 
 let data = {
 id: 1,
@@ -70,9 +70,10 @@ phone: "1-770-736-8031 x56442",
 website: "hildegard.org",
 }
 
-Ubahlah data tersebut menggunakan spread operator menjadi:
-name: nama anda
-email: email anda
-hobby: hobi anda
+a. Ubahlah data tersebut menggunakan spread operator menjadi:
 
-Ambilah data “street dan city” tersebut menggunakan destructuring
+- name: nama anda
+- email: email anda
+- hobby: hobi anda
+
+b. Ambilah data “street dan city” tersebut menggunakan destructuring
