@@ -1,26 +1,45 @@
-const mtk = 80;
-const bahasaIndonesia = 90;
-const bahasaInggris = 89;
-const ipa = 69;
+let mtk = 101;
+let bahasaIndonesia = 90;
+let bahasaInggris = 89;
+let ipa = 69;
 
-if( typeof mtk == "string" || 
-    typeof bahasaIndonesia == "string" || 
-    typeof bahasaInggris == "string" || 
-    typeof ipa == "string"){
+if( typeof mtk === "string" || 
+    typeof bahasaIndonesia === "string" || 
+    typeof bahasaInggris === "string" || 
+    typeof ipa === "string"){
     console.log("Semua data harus berisi nilai");
+}else if(typeof mtk !== "number" || 
+    typeof bahasaIndonesia !== "number" || 
+    typeof bahasaInggris !== "number" || 
+    typeof ipa !== "number"){
+    console.log("Data harus diisi");
+}else if( mtk > 100 || bahasaIndonesia > 100 || bahasaInggris > 100 || ipa > 100){
+    console.log("Nilai tidak boleh lebih dari 100");
 }else{
     const rataRata = (mtk + bahasaIndonesia + bahasaInggris + ipa) / 4;
-    console.log(`Rata-rata nya adalah ${rataRata}`);
+    grade = "";
     
     if(rataRata >= 90 && rataRata <= 100){
-        console.log("Grade = A");
+        grade ="A";
+        console.log(`Rata-rata = ${rataRata} 
+Grade = ${grade}`);
     }else if(rataRata >= 80 && rataRata <= 89){
-        console.log("Grade = B");
+        grade ="B";
+        console.log(`Rata-rata = ${rataRata} 
+Grade = ${grade}`);
     }else if(rataRata >= 70 && rataRata <= 79){
-        console.log("Grade = C");
+        grade ="C";
+        console.log(`Rata-rata = ${rataRata}
+Grade = ${grade}`);
     }else if(rataRata >= 60 && rataRata <= 69){
-        console.log("Grade = D");
+        grade ="D";
+        console.log(`Rata-rata = ${rataRata}
+Grade = ${grade}`);
     }else if(rataRata >= 0 && rataRata <= 59){
-        console.log("Grade = E");
+        grade ="E";
+        console.log(`Rata-rata = ${rataRata}
+Grade = ${grade}`);
+    }else{
+        console.log("Data tidak valid");
     }
 }
