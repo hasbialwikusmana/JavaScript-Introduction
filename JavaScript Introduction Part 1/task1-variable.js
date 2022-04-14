@@ -22,11 +22,8 @@ const biodata = {
     }],
     skills: [
         {
-        skillName: 'HTML',
-        level: 'beginner'
-    }, {
-        skillName: 'CSS',
-        level: 'beginner'
+        skillName: 'Corel Draw',
+        level: 'advanced'
     }, {
         skillName: 'Javascript',
         level: 'beginner'
