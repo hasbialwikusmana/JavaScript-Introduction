@@ -23,7 +23,4 @@ if( typeof mtk == "string" ||
     }else if(rataRata >= 0 && rataRata <= 59){
         console.log("Grade = E");
     }
-    else{
-        console.log("Data nilai yang anda masukkan salah");
-    }
 }
