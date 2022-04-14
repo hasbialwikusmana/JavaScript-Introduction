@@ -27,5 +27,3 @@ if( typeof mtk == "string" ||
         console.log("Data nilai yang anda masukkan salah");
     }
 }
-
-
