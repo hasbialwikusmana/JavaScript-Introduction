@@ -20,7 +20,7 @@ let data = {
     // email: email anda
     // hobby: hobi anda
 
-    const resultData = {...data, name: "Hasbi Alwi Kusmana", email: "hasbialwi70@gmail.com", myHobby: ['coding', 'reading', 'listening to music']};
+    const resultData = {...data, name: "Hasbi Alwi Kusmana", email: "hasbialwi70@gmail.com", myHobby: ['coding', 'Playing Games', 'music']};
     // console.log(resultData);
 
 //  b. Ambilah data “street dan city” tersebut menggunakan destructuring
