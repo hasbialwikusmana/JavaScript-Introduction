@@ -8,11 +8,6 @@ if( typeof mtk == "string" ||
     typeof bahasaInggris == "string" || 
     typeof ipa == "string"){
     console.log("Semua data harus berisi nilai");
-}else if(typeof mtk != "number" || 
-    typeof bahasaIndonesia != "number" || 
-    typeof bahasaInggris != "number" || 
-    typeof ipa != "number"){
-    console.log("Data harus diisi");
 }else{
     const rataRata = (mtk + bahasaIndonesia + bahasaInggris + ipa) / 4;
     console.log(`Rata-rata nya adalah ${rataRata}`);
@@ -27,6 +22,9 @@ if( typeof mtk == "string" ||
         console.log("Grade = D");
     }else if(rataRata >= 0 && rataRata <= 59){
         console.log("Grade = E");
+    }
+    else{
+        console.log("Data nilai yang anda masukkan salah");
     }
 }
 
