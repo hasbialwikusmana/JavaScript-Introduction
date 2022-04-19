@@ -40,23 +40,27 @@
 // console.log(janjian);
 
 const panggilBilanganGenap = () => {
-  return new promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       let result = "";
-      const randomNilai = Math.floor(Math.random() * 10);
-      if (randomNilai % 2 === 0) {
-        result = `Success !! Hasil ${randomNilai} Bilangan Genap`;
+      const RandomNilai = Math.floor(Math.random() * 10);
+      if (RandomNilai % 2 === 0) {
+        result = `Succes !! hasil ${RandomNilai} adalah nilainya genap`;
         resolve(result);
       } else {
-        result = `Failed !! Hasil ${randomNilai} Bilangan Ganjil`;
+        result = new Error(
+          `Gagal !! hasil ${RandomNilai} adalah nilainya gajil`
+        );
         reject(result);
       }
     }, 3000);
-  })
-    .then((result) => {
-      console.log(result);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  });
 };
+// console.log(result);
+panggilBilanganGenap()
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  });

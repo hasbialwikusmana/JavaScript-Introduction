@@ -7,13 +7,14 @@ const getDataPost = (method, url, callback) => {
       const result = JSON.parse(ajax.responseText);
       callback(result);
     } else {
-      console.log("Ada Error Bro");
+      console.log("ada error bro...");
     }
   };
 };
+// getDataPost();
 
-getDataPost("GET", "https://jsonplaceholder.typicode.com/posts", (result) => {
-  result.map((item) => {
-    console.log(item.title);
+getDataPost("GET", "https://jsonplaceholder.typicode.com/posets", (result) => {
+  result.map(({ title }) => {
+    console.log(title);
   });
 });

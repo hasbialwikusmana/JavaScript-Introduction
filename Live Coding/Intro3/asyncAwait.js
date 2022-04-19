@@ -1,22 +1,36 @@
 const panggilBilanganGenap = () => {
-  return new promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       let result = "";
-
-      const randomNilai = Math.floor(Math.random() * 10);
-      if (randomNilai % 2 === 0) {
-        result = `Success !! Hasil ${randomNilai} Bilangan Genap`;
+      const RandomNilai = Math.floor(Math.random() * 10);
+      if (RandomNilai % 2 === 0) {
+        result = `Succes !! hasil ${RandomNilai} adalah nilainya genap`;
         resolve(result);
       } else {
-        result = new Error(`Failed !! Hasil ${randomNilai} Bilangan Ganjil`);
+        result = new Error(
+          `Gagal !! hasil ${RandomNilai} adalah nilainya gajil`
+        );
         reject(result);
       }
     }, 3000);
   });
 };
-const getBilanganGanjil = async () => {
-  const result = await panggilBilanganGenap();
-  console.log(result);
+// console.log(result);
+const getBilanganGanji = async () => {
+  try {
+    console.log("code 1");
+    const result = await panggilBilanganGenap();
+    console.log(result);
+    console.log("code 3");
+    console.log("code 4");
+  } catch (error) {
+    console.log("catch di panggil");
+    console.log(error);
+  }
+  console.log("hasil result");
+  // finally{
+  //     console.log('proses selesai');
+  // }
 };
 
-getBilanganGanjil();
+getBilanganGanji();

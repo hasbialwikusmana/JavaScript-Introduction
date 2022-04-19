@@ -1,13 +1,26 @@
-//
-const getProduct = (callback) => {
+// const getProduct =(callback)=>{
+//     let makanan =[]
+//     setTimeout(()=>{
+//         // sudah dapat value dari DB
+//         makanan = ['nasi goreng', 'nasi padang', 'nasi uduk']
+//         callback(makanan)
+//     }, 300)
+// }
+// getProduct((data)=>{
+//     data.map((item, index)=>{
+//         console.log(`makan ${index} nilai adlalah ${item}`);
+//     })
+// })
+
+const getProduct = () => {
   let makanan = [];
   setTimeout(() => {
-    makanan = ["nasi", "soto", "sate"];
-    callback(makanan);
+    // sudah dapat value dari DB
+    makanan = ["nasi goreng", "nasi padang", "nasi uduk"];
+    return makanan;
+    // callback(makanan)
   }, 300);
 };
-getProduct((data) => {
-  data.map((item, index) => {
-    console.log(`makan ${index} nilai adalah ${item}`);
-  });
-});
+// console.log(ge);
+const result = getProduct();
+console.log(result);

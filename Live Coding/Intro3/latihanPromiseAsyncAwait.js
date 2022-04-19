@@ -1,4 +1,3 @@
-//
 const getDataPost = (method, url) => {
   return new Promise((resolve, reject) => {
     const ajax = new XMLHttpRequest();
@@ -9,7 +8,7 @@ const getDataPost = (method, url) => {
         const result = JSON.parse(ajax.responseText);
         resolve(result);
       } else {
-        reject(new Error("Ada Error Bro"));
+        reject(new Error("ada error bro..."));
       }
     };
   });
@@ -18,7 +17,7 @@ const handleDataPost = async () => {
   try {
     const result = await getDataPost(
       "GET",
-      "https://jsonplaceholder.typicode.com/posts"
+      "https://jsonplaceholder.typicode.com/poxsts"
     );
     result.map((item) => {
       console.log(item.title);
@@ -27,5 +26,4 @@ const handleDataPost = async () => {
     console.log(error);
   }
 };
-
 handleDataPost();
