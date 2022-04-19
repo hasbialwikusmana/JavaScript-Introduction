@@ -1,3 +1,4 @@
+//
 const getDataPost = (method, url) => {
   return new Promise((resolve, reject) => {
     const ajax = new XMLHttpRequest();

@@ -11,7 +11,6 @@ const getDataPost = (method, url, callback) => {
     }
   };
 };
-// getDataPost();
 
 getDataPost("GET", "https://jsonplaceholder.typicode.com/posts", (result) => {
   result.map((item) => {

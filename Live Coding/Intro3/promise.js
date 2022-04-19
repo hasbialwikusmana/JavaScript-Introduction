@@ -1,3 +1,4 @@
+//
 // let janjian = new Promise((resolve, reject) => {
 //   let success = true;
 //   if (success) {
