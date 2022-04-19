@@ -9,3 +9,7 @@
 `Part 2`
 
 - [JavaScript Introduction Part 2](JavaScript%20Introduction%20Part%202)
+
+`Part 3`
+
+- [JavaScript Introduction Part 3](JavaScript%20Introduction%20Part%203)
