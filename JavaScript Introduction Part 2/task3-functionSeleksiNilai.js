@@ -11,7 +11,7 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
     }else if (nilaiAwal < nilaiAkhir && dataArray.length >= 5) {
     const result = dataArray.filter((value) => value > nilaiAwal && value < nilaiAkhir).sort(function (a, b) {return a - b;});
 
-      if (result == 0) {
+      if (result.length === 0) {
         console.log("Nilai tidak ditemukan");
       } else {
         console.log(result);
