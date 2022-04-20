@@ -2,18 +2,18 @@ const getMonth = (callback) => {
   setTimeout(() => {
     let error = false;
     let month = [
-      "januari",
-      "februari",
-      "maret",
-      "april",
-      "mei",
-      "juni",
-      "juli",
-      "agustus",
-      "september",
-      "oktober",
-      "november",
-      "desember",
+      "Januari",
+      "Februari",
+      "Maret",
+      "April",
+      "Mei",
+      "Juni",
+      "Juli",
+      "Agustus",
+      "September",
+      "Oktober",
+      "November",
+      "Desember",
     ];
     if (!error) {
       callback(null, month);
