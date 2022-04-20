@@ -3,4 +3,4 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .then((users) => {
     users.map((user) => console.log(user.name));
   })
-  .catch((err) => console.log(err));
+  .catch((err) => console.log(err.message));
