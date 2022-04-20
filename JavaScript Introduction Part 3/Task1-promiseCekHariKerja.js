@@ -14,29 +14,31 @@ const cekHariKerja = (day) => {
   });
 };
 
-//then berfungsi untuk handler ketika cek bernilai true
-//catch berfungsi untuk handler ketika cek bernilai false
-
-cekHariKerja("senin")
-  .then((result) => {
-    console.log(`Hari ${result} adalah hari kerja`);
-  })
-  .catch((error) => {
-    console.log(error.message);
-  });
-
-// try memungkinkan untuk mengecek atau memeriksa block agar mengetahui error atau tidak
-// // catch adalah block yang menampilkan error jika pada try terjadi error
-// // sedangkan finally akan menjalankan saat true ataupun false
-
-// const jadwalKerja = async () => {
-//   try {
-//     const result = await cekHariKerja("senin");
+// cekHariKerja("senin")
+//   .then((result) => {
 //     console.log(`Hari ${result} adalah hari kerja`);
-//   } catch (error) {
+//   })
+//   .catch((error) => {
 //     console.log(error.message);
-//   } finally {
-//     console.log("Program selesai!");
-//   }
-// };
-// jadwalKerja();
+//   });
+
+const jadwalKerja = async (day) => {
+  try {
+    const result = await cekHariKerja(day);
+    console.log(`Hari ${result} adalah hari kerja`);
+  } catch (error) {
+    console.log(error.message);
+  } finally {
+    console.log("Program selesai!");
+  }
+};
+jadwalKerja("senin");
+
+// Penggunaan then catch :
+// - .then digunakan jika state promisenya fulfilled (berhasil), objectnya adalah resolve() bernilai true
+// - .catch digunakan jika state promisenya rejected (gagal), objectnya adalah reject() bernilai false
+
+// Penggunaan try catch :
+// - .try digunakan untuk mencoba kode yang memungkinkan terjadinya error
+// - .catch digunakan untuk menangkap error apabila terjadi error pada blok try
+// // sedangkan finally akan menjalankan saat true ataupun false
