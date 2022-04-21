@@ -16,4 +16,4 @@
 
 `B` Lanjutan JavaScript Introduction `Code Implementation`
 
-- [Code Implementation](Code-Implementation)
+- [Code Implementation](../Code-Implementation/)
