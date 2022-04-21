@@ -19,27 +19,28 @@
 //   });
 
 // 2.Penjumlahan nilai awal dan nilai akhir
-// const getNilai = (nilaiAwal, nilaiAkhir, callback) => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (nilaiAwal <= nilaiAkhir) {
-//         resolve(callback(nilaiAwal, nilaiAkhir));
-//       } else {
-//         reject(new Error("Nilai awal harus lebih kecil dari nilai akhir"));
-//       }
-//     }, 3000);
-//   });
-// };
+const add = (firstNumber, secondNumber) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (firstNumber && secondNumber) {
+        resolve(firstNumber + secondNumber);
+      } else {
+        reject(new Error("Nilai awal dan nilai akhir harus diisi"));
+      }
+    }, 3000);
+  });
+};
 
-// const nilai = async () => {
-//   try {
-//     const result = await getNilai(32, 30, (nilaiAwal, nilaiAkhir) => {
-//       return nilaiAwal + nilaiAkhir;
-//     });
-//     console.log(result);
-//   } catch (error) {
-//     console.log(error.message);
-//   }
-// };
+const addData = async (firstNumber, secondNumber) => {
+  try {
+    const result = await add(firstNumber, secondNumber);
+    console.log(result);
+  } catch (error) {
+    console.log(error.message);
+  } finally {
+    console.log("Program selesai!");
+  }
+};
+addData(10, 20);
 
 // nilai();
