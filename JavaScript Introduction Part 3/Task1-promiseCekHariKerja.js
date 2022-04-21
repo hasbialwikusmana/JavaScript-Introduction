@@ -19,7 +19,7 @@ cekHariKerja("senin")
     console.log(`Hari ${result} adalah hari kerja`);
   })
   .catch((error) => {
-    console.log(error.message);
+    console.log(error);
   });
 
 // const jadwalKerja = async (day) => {
@@ -27,7 +27,7 @@ cekHariKerja("senin")
 //     const result = await cekHariKerja(day);
 //     console.log(`Hari ${result} adalah hari kerja`);
 //   } catch (error) {
-//     console.log(error.message);
+//     console.log(error);
 //   } finally {
 //     console.log("Program selesai!");
 //   }
