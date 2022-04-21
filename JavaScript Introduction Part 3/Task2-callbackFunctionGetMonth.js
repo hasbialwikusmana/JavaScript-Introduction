@@ -23,10 +23,9 @@ const getMonth = (callback) => {
   }, 4000);
 };
 getMonth((error, monthAll) => {
-  if (error !== null) {
-    console.log(error);
+  if (error === null) {
+    monthAll.map((value) => console.log(value));
   } else {
-    const result = monthAll.map((value) => value);
-    console.log(result);
+    console.log(error.message);
   }
 });
