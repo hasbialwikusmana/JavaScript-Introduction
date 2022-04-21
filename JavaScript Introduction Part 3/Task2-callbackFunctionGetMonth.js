@@ -22,10 +22,10 @@ const getMonth = (callback) => {
     }
   }, 4000);
 };
-getMonth((error, monthAll) => {
-  if (!error) {
-    monthAll.map((value) => console.log(value));
-  } else {
-    console.log(error);
-  }
-});
+// getMonth((error, monthAll) => {
+//   if (!error) {
+//     monthAll.map((value) => console.log(value));
+//   } else {
+//     console.log(error);
+//   }
+// });

@@ -14,13 +14,13 @@ const cekHariKerja = (day) => {
   });
 };
 
-cekHariKerja("senin")
-  .then((result) => {
-    console.log(`Hari ${result} adalah hari kerja`);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// cekHariKerja("senin")
+//   .then((result) => {
+//     console.log(`Hari ${result} adalah hari kerja`);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
 // const jadwalKerja = async (day) => {
 //   try {
