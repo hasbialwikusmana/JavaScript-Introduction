@@ -19,11 +19,11 @@
 //   });
 
 // 2.Penjumlahan nilai awal dan nilai akhir
-const add = (firstNumber, secondNumber) => {
+const add = (nilaiAwal, nilaiAkhir) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (firstNumber && secondNumber) {
-        resolve(firstNumber + secondNumber);
+      if (nilaiAwal && nilaiAkhir) {
+        resolve(nilaiAwal + nilaiAkhir);
       } else {
         reject(new Error("Nilai awal dan nilai akhir harus diisi"));
       }
@@ -31,9 +31,9 @@ const add = (firstNumber, secondNumber) => {
   });
 };
 
-const addData = async (firstNumber, secondNumber) => {
+const addData = async (nilaiAwal, nilaiAkhir) => {
   try {
-    const result = await add(firstNumber, secondNumber);
+    const result = await add(nilaiAwal, nilaiAkhir);
     console.log(result);
   } catch (error) {
     console.log(error.message);
@@ -41,6 +41,6 @@ const addData = async (firstNumber, secondNumber) => {
     console.log("Program selesai!");
   }
 };
-addData(10, 20);
+addData(30, 20);
 
 // nilai();
