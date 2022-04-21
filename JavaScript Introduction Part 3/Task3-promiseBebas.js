@@ -5,7 +5,7 @@ const checkName = (name) => {
       if (name === "Hasbi") {
         resolve(name);
       } else {
-        reject(new Error("It's not my name"));
+        reject(new Error("Nama kamu salah"));
       }
     }, 3000);
   });
@@ -18,26 +18,26 @@ checkName("Hasbi")
     console.log(error.message);
   });
 
-// 2.Penjumlahan nilai awal dan nilai akhir
-const addNilai = (nilaiAwal, nilaiAkhir) => {
+// 2.Cek umur
+const checkAge = (age) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (nilaiAwal && nilaiAkhir) {
-        const tambah = nilaiAwal + nilaiAkhir;
-        resolve(tambah);
+      if (age >= 18) {
+        resolve(age);
       } else {
-        reject(new Error("Nilai awal dan nilai akhir harus diisi"));
+        reject(new Error("Usia kamu belum cukup"));
       }
     }, 3000);
   });
 };
 
-const addData = async (nilaiAwal, nilaiAkhir) => {
+const checkAgeData = async (age) => {
   try {
-    const result = await addNilai(nilaiAwal, nilaiAkhir);
+    const result = await checkAge(age);
     console.log(result);
   } catch (error) {
     console.log(error.message);
   }
 };
-addData(30, 20);
+
+checkAgeData(18);
