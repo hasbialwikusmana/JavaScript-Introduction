@@ -14,25 +14,25 @@ const cekHariKerja = (day) => {
   });
 };
 
-// cekHariKerja("senin")
-//   .then((result) => {
-//     console.log(`Hari ${result} adalah hari kerja`);
-//   })
-//   .catch((error) => {
-//     console.log(error.message);
-//   });
-
-const jadwalKerja = async (day) => {
-  try {
-    const result = await cekHariKerja(day);
+cekHariKerja("senin")
+  .then((result) => {
     console.log(`Hari ${result} adalah hari kerja`);
-  } catch (error) {
+  })
+  .catch((error) => {
     console.log(error.message);
-  } finally {
-    console.log("Program selesai!");
-  }
-};
-jadwalKerja("senin");
+  });
+
+// const jadwalKerja = async (day) => {
+//   try {
+//     const result = await cekHariKerja(day);
+//     console.log(`Hari ${result} adalah hari kerja`);
+//   } catch (error) {
+//     console.log(error.message);
+//   } finally {
+//     console.log("Program selesai!");
+//   }
+// };
+// jadwalKerja("senin");
 
 // Penggunaan then catch :
 // - .then digunakan jika state promisenya fulfilled (berhasil), objectnya adalah resolve() bernilai true
