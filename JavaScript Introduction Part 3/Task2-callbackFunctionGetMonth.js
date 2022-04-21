@@ -26,6 +26,6 @@ getMonth((error, monthAll) => {
   if (error === null) {
     monthAll.map((value) => console.log(value));
   } else {
-    console.log(error.message);
+    console.log(error);
   }
 });
