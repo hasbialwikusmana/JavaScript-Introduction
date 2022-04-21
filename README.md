@@ -13,7 +13,3 @@
 `Part 3`
 
 - [JavaScript Introduction Part 3](JavaScript%20Introduction%20Part%203)
-
-`B` Lanjutan JavaScript Introduction `Code Implementation`
-
-- [Code Implementation](../Code-Implementation/)
